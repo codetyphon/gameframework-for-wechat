@@ -5,12 +5,12 @@ const setup = (sprite, static_image, get_image, get_audio) => {
   console.log('setup')
   const player = sprite({
     role: "player",
-    x: window.innerWidth / 2 - 20,
-    y: window.innerHeight - 56,
+    x: window.innerWidth / 2 - 40,
+    y: window.innerHeight - 128,
     vx: 0,
     vy: 0,
-    width: 40,
-    height: 28,
+    width: 80,
+    height: 56,
     scale: 1,
     img: get_image('player')
   });
@@ -28,12 +28,12 @@ const setup = (sprite, static_image, get_image, get_audio) => {
 
     const fire = sprite({
       role: "fire",
-      x: player.position.x + player.size.width / 2 - 1,
+      x: player.position.x + player.size.width / 2 - 2,
       y: player.position.y,
       vx: 0,
       vy: -4,
-      width: 2,
-      height: 2,
+      width: 4,
+      height: 6,
       scale: 1,
       img: get_image('fire')
     });
